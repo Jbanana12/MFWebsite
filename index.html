@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Jana</title>
+    <meta property="og:title" content="About - Jana">
+    <meta property="og:description" content="About page for Jana">
+    <meta property="og:image" content="/images/og-image.png">
+    <meta property="og:url" content="https://example.com/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.2;
+            color: #333;
+            background: #fff;
+            font-size: 16px;
+        }
+        
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            padding: 40px 20px;
+            height: 100vh;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav li {
+            margin-bottom: 15px;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        nav a.active {
+            font-weight: 600;
+        }
+        
+        main {
+            margin-left: 200px;
+            padding: 40px;
+            max-width: 650px;
+        }
+        
+        h1 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        
+        .contact {
+            margin-top: 40px;
+        }
+        
+        .contact a {
+            color: #333;
+            text-decoration: underline;
+            margin-right: 15px;
+        }
+        
+        .contact a:hover {
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            
+            nav {
+                position: static;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            nav ul {
+                display: flex;
+                gap: 20px;
+            }
+            
+            nav li {
+                margin-bottom: 0;
+            }
+            
+            main {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="moodboards.html">Moodboards</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h1>About</h1>
+            
+            <p>This is a placeholder bio for Jana. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            
+            <p>12:01 is a placeholder project name. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>
+                    <a href="https://example.com">Website</a>
+                    <a href="mailto:jana@example.com">Email</a>
+                    <a href="https://twitter.com/jana" target="_blank" rel="noopener noreferrer">X formerly Twitter</a>
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
